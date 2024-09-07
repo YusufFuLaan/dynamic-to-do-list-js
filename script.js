@@ -17,12 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create a new li element
         const li = document.createElement('li');
+        li.classList.add('task-item'); // Add a class to the li element
         li.textContent = taskText;
 
         // Create a new remove button element
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add('remove-btn'); // Add a class to the remove button
         
         // Assign an onclick event to the remove button
         removeButton.onclick = () => {
